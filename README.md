@@ -1,6 +1,6 @@
 # GaussianFace: Gaussian Mixture Models for Face Generation
 
-Welcome to **GaussianFace**! This project investigates Gaussian Mixture Models (GMMs), blending theoretical exploration with practical applications to generate human-like faces using the Labeled Faces in the Wild (LFW) dataset. While the results don’t yet compete with state-of-the-art generative models like GANs, they provide meaningful insights into GMMs’ potential for creative tasks—and there’s plenty of room to grow.
+Welcome to **GaussianFace**! This project investigates Gaussian Mixture Models (GMMs), blending theoretical exploration with practical applications to generate human-like faces using the Labeled Faces in the Wild (LFW) dataset. While the results don’t yet compete with state-of-the-art generative models like GANs, they provide meaningful insights into GMMs’ potential for creative tasks.
 
 ---
 
@@ -20,9 +20,9 @@ This repository features a detailed Jupyter notebook organized into three main s
 
 3. **Face Generation with GMMs**  
    - Application of GMMs to the LFW dataset for generating artificial faces.  
-   - Use of PCA for dimensionality reduction (retaining 99% variance) to streamline computation.  
+   - Use of PCA for dimensionality reduction to streamline computation.  
    - Training on representative subsets identified by K-Means clustering.  
-   - Experiments with GMMs to generate faces, exploring how `n_components` affects overfitting and output quality.  
+   - Experiments with GMMs to generate faces, exploring how number of gaussians affect overfitting and output quality.  
    - Improved results by focusing GMM training on clusters of similar faces from K-Means.  
 
 ---
