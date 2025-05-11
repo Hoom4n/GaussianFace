@@ -2,7 +2,7 @@
 
 Welcome to **GaussianFace**! This project investigates Gaussian Mixture Models (GMMs), blending theoretical exploration with practical applications to generate human-like faces using the Labeled Faces in the Wild (LFW) dataset. While the results don’t yet compete with state-of-the-art generative models like GANs, they provide meaningful insights into GMMs’ potential for creative tasks.
 
-*Notice:* Due to GitHub's rendering limitations for large notebooks, you can view the notebook online via <a href="https://colab.research.google.com/github/hoom4n/GaussianFace/blob/main/GaussianFace.ipynb">Google Colab</a> or <a href="https://nbviewer.org/github/hoom4n/GaussianFace/blob/main/GaussianFace.ipynb"> NB Viewer</a>
+*Note:* If you experience issues viewing this notebook on GitHub (due to GitHub's limitations with rendering large notebooks), you can view it online via <a href="https://colab.research.google.com/github/hoom4n/GaussianFace/blob/main/GaussianFace.ipynb">Google Colab</a> or <a href="https://nbviewer.org/github/hoom4n/GaussianFace/blob/main/GaussianFace.ipynb"> NB Viewer</a>
 
 ---
 
@@ -15,10 +15,10 @@ This repository features a detailed Jupyter notebook organized into three main s
 
 2. **Practical Applications with Scikit-Learn**  
    - Implementation of GMMs on the Iris dataset, visualized in 2D using t-SNE, with a comparison of original and GMM-predicted labels.  
-   - Analysis of model attributes like convergence and covariance structures.  
-   - Examples of soft and hard clustering, plus strategies to simplify models with `covariance_type`.  
+   - Analysis of model attributes like parameters, convergence and covariance structures.  
+   - Soft and hard clustering with GMM, plus strategies to simplify models with `covariance_type`.  
    - Anomaly detection via `score_samples()` and visualization of outliers.  
-   - Evaluation of cluster counts using BIC and AIC metrics.  
+   - Find the optimal number of clusters with BIC and AIC metrics.  
 
 3. **Face Generation with GMMs**  
    - Application of GMMs to the LFW dataset for generating artificial faces.  
@@ -31,8 +31,10 @@ This repository features a detailed Jupyter notebook organized into three main s
 
 ## Key Findings
 - Training GMMs on smaller, cohesive subsets of similar faces enhances image quality with fewer components.  
-- Too many components (e.g., 100) can overfit, producing faces too close to the training set.  
-- Training on similar faces with 25–50 components hit a sweet spot, yielding realistic yet original faces.  
+- **Impact of Components**: Increasing the `n_components` hyperparameter adds more parameters, causing the model to learn finer details from the training set. This results in generated faces that resemble the source data too closely at high component counts.
+- **LFW Challenges**: The LFW dataset’s variability—different lighting, exposures, backgrounds, and features like mustaches—complicates the identification of “similar images” for both GMMs and K-Means clustering.
+- **GMM Limitations**: GMMs may not be ideal for image generation, as images often don’t align with the *mixture of Gaussians* assumption underlying the model.
+- **Value of the Approach**: Despite these challenges, using statistical modeling like GMMs to synthesize faces is a compelling concept. It lays a foundation for understanding modern, state-of-the-art image generation techniques that build on similar probabilistic ideas.
 
 ---
 
