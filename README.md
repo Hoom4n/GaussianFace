@@ -1,6 +1,6 @@
-# GaussFace: Gaussian Mixture Models for Face Generation
+# GaussianFace: Gaussian Mixture Models for Face Generation
 
-Welcome to **GaussFace**! This project investigates Gaussian Mixture Models (GMMs), blending theoretical exploration with practical applications to generate human-like faces using the Labeled Faces in the Wild (LFW) dataset. While the results don’t yet compete with state-of-the-art generative models like GANs, they provide meaningful insights into GMMs’ potential for creative tasks—and there’s plenty of room to grow.
+Welcome to **GaussianFace**! This project investigates Gaussian Mixture Models (GMMs), blending theoretical exploration with practical applications to generate human-like faces using the Labeled Faces in the Wild (LFW) dataset. While the results don’t yet compete with state-of-the-art generative models like GANs, they provide meaningful insights into GMMs’ potential for creative tasks—and there’s plenty of room to grow.
 
 ---
 
