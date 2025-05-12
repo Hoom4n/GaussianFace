@@ -16,8 +16,8 @@ This repository features a detailed Jupyter notebook organized into three main s
 2. **Practical Applications with Scikit-Learn**  
    - Implementation of GMMs on the Iris dataset, visualized in 2D using t-SNE, with a comparison of original and GMM-predicted labels.  
    - Analysis of model attributes like parameters, convergence and covariance structures.  
-   - Soft and hard clustering with GMM, plus strategies to simplify models with `covariance_type`.  
-   - Anomaly detection via `score_samples()` and visualization of outliers.  
+   - Soft and Hard clustering with GMM, plus strategies to simplify model with `covariance_type`.  
+   - Anomaly detection via Density Estimation and visualization of outliers.  
    - Find the optimal number of clusters with BIC and AIC metrics.  
 
 3. **Face Generation with GMMs**  
