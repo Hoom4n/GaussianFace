@@ -2,7 +2,7 @@
 
 Welcome to **GaussianFace**! This project investigates Gaussian Mixture Models (GMMs), blending theoretical exploration with practical applications to generate human-like faces using the Labeled Faces in the Wild (LFW) dataset. While the results don’t yet compete with state-of-the-art generative models like GANs, they provide meaningful insights into GMMs’ potential for creative tasks.
 
-*Note:* If you experience issues viewing this notebook on GitHub (due to GitHub's limitations with rendering large notebooks), you can view it online via <a href="https://colab.research.google.com/github/hoom4n/GaussianFace/blob/main/GaussianFace.ipynb">Google Colab</a> or <a href="https://nbviewer.org/github/hoom4n/GaussianFace/blob/main/GaussianFace.ipynb"> NB Viewer</a>
+*Note:* If you experience issues viewing this notebook on GitHub, you can view it online via <a href="https://colab.research.google.com/github/hoom4n/GaussianFace/blob/main/GaussianFace.ipynb">Google Colab</a> or <a href="https://nbviewer.org/github/hoom4n/GaussianFace/blob/main/GaussianFace.ipynb"> NB Viewer</a>
 
 ---
 
